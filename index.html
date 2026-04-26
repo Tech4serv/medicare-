@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>MediCare Plus | Premium Online Pharmacy</title>
+  <meta name="description" content="Trusted online pharmacy with FDA-approved medications. Free consultation, fast shipping, 24/7 support." />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body>
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-flex">
+        <div class="contact-strip">
+          <span><i class="fas fa-phone-alt"></i> +12059009168</span>
+          <span><i class="fab fa-whatsapp"></i> +12059730013</span>
+          <span><i class="fas fa-clock"></i> 24/7 Support</span>
+        </div>
+        <div class="theme-switch-wrapper">
+          <label class="theme-switch" for="darkModeToggle">
+            <input type="checkbox" id="darkModeToggle" />
+            <span class="slider round">
+              <i class="fas fa-sun"></i>
+              <i class="fas fa-moon"></i>
+            </span>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="logo">
+          <div class="logo-icon">
+            <i class="fas fa-pills"></i>
+          </div>
+          <span>MediCare<span class="plus">+</span></span>
+        </a>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="medicines.html" class="nav-link">Medications</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="blog.html" class="nav-link">Health Blog</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="cart-btn" id="cartIconBtn" aria-label="Open cart">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-text">Cart</span>
+            <span id="cartCountBadge" class="cart-badge">0</span>
+          </button>
+          <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-background">
+        <div class="hero-particles" id="heroParticles"></div>
+      </div>
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-text" data-aos="fade-right">
+            <div class="hero-badge">
+              <i class="fas fa-shield-alt"></i> Trusted Since 2018
+            </div>
+            <h1>Your Health, <span class="accent-text">Our Priority</span></h1>
+            <p class="hero-description">
+              Access premium medications with fast, discreet shipping. Licensed pharmacists available 24/7 for consultation and prescription support. Over 25,000 satisfied customers across all 50 states.
+            </p>
+            <div class="hero-buttons">
+              <a href="medicines.html" class="btn btn-primary btn-glow">
+                <i class="fas fa-pills"></i> Shop Now
+                <i class="fas fa-arrow-right"></i>
+              </a>
+              <a href="about.html" class="btn btn-outline">
+                <i class="fas fa-info-circle"></i> Learn More
+              </a>
+            </div>
+            <div class="trust-badges">
+              <div class="badge-item">
+                <i class="fas fa-shield-alt"></i>
+                <span>FDA Approved</span>
+              </div>
+              <div class="badge-item">
+                <i class="fas fa-truck-fast"></i>
+                <span>Free Tracking</span>
+              </div>
+              <div class="badge-item">
+                <i class="fas fa-user-md"></i>
+                <span>Licensed Pharmacists</span>
+              </div>
+              <div class="badge-item">
+                <i class="fas fa-lock"></i>
+                <span>Secure Checkout</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-image" data-aos="fade-left">
+            <div class="hero-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1579154204601-01588f351e67?" alt="Professional Pharmacy Services" loading="eager" />
+              <div class="floating-card float-1">
+                <i class="fas fa-prescription-bottle"></i>
+                <div>
+                  <strong>10,000+</strong>
+                  <span>Orders Fulfilled</span>
+                </div>
+              </div>
+              <div class="floating-card float-2">
+                <i class="fas fa-star"></i>
+                <div>
+                  <strong>4.9/5</strong>
+                  <span>Customer Rating</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Why Choose Us</span>
+          <h2 class="section-title">Premium <span class="accent-text">Healthcare Services</span></h2>
+          <p class="section-subtitle">Experience the difference with our comprehensive pharmacy solutions designed for your convenience and safety</p>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card" data-aos="fade-up" data-aos-delay="0">
+            <div class="feature-icon">
+              <i class="fas fa-prescription"></i>
+            </div>
+            <h3>Prescription Transfer</h3>
+            <p>Easily transfer your existing prescriptions to us. Our licensed team handles all paperwork and verification.</p>
+            <a href="contact.html" class="feature-link">Learn More <i class="fas fa-arrow-right"></i></a>
+          </div>
+          <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="feature-icon">
+              <i class="fas fa-truck"></i>
+            </div>
+            <h3>Fast Delivery</h3>
+            <p>Same-day tracking with Priority ($45) or Overnight ($189) shipping options. Discreet packaging guaranteed.</p>
+            <a href="#" class="feature-link">Shipping Info <i class="fas fa-arrow-right"></i></a>
+          </div>
+          <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="feature-icon">
+              <i class="fas fa-headset"></i>
+            </div>
+            <h3>24/7 Support</h3>
+            <p>Round-the-clock assistance from our pharmaceutical experts via phone, email, or WhatsApp.</p>
+            <a href="contact.html" class="feature-link">Contact Us <i class="fas fa-arrow-right"></i></a>
+          </div>
+          <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="feature-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3>100% Authentic</h3>
+            <p>All medications sourced from licensed, FDA-approved facilities with guaranteed authenticity.</p>
+            <a href="about.html" class="feature-link">Our Standards <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="featured-products" id="products">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Best Sellers</span>
+          <h2 class="section-title">Most Popular <span class="accent-text">Medications</span></h2>
+          <p class="section-subtitle">Our customers' top choices for quality and reliability</p>
+        </div>
+        <div class="featured-grid" id="featuredGrid"></div>
+        <div class="text-center mt-4">
+          <a href="medicines.html" class="btn btn-outline btn-lg">
+            <i class="fas fa-list"></i> View All Products
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item" data-aos="zoom-in">
+            <div class="stat-icon">
+              <i class="fas fa-map-marked-alt"></i>
+            </div>
+            <div class="stat-number" data-count="50">0</div>
+            <div class="stat-label">States Served</div>
+          </div>
+          <div class="stat-item" data-aos="zoom-in" data-aos-delay="100">
+            <div class="stat-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <div class="stat-number" data-count="25000">0</div>
+            <div class="stat-label">Happy Customers</div>
+          </div>
+          <div class="stat-item" data-aos="zoom-in" data-aos-delay="200">
+            <div class="stat-icon">
+              <i class="fas fa-smile"></i>
+            </div>
+            <div class="stat-number" data-count="100">0</div>
+            <div class="stat-label">Satisfaction Rate</div>
+          </div>
+          <div class="stat-item" data-aos="zoom-in" data-aos-delay="300">
+            <div class="stat-icon">
+              <i class="fas fa-pills"></i>
+            </div>
+            <div class="stat-number" data-count="27">0</div>
+            <div class="stat-label">Products Available</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Simple Process</span>
+          <h2 class="section-title">How <span class="accent-text">It Works</span></h2>
+          <p class="section-subtitle">Get your medications in 4 easy steps</p>
+        </div>
+        <div class="steps-grid">
+          <div class="step-card">
+            <div class="step-number">01</div>
+            <div class="step-icon"><i class="fas fa-search"></i></div>
+            <h3>Browse Products</h3>
+            <p>Explore our wide range of authentic medications</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">02</div>
+            <div class="step-icon"><i class="fas fa-cart-plus"></i></div>
+            <h3>Add to Cart</h3>
+            <p>Select your medications and proceed to checkout</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">03</div>
+            <div class="step-icon"><i class="fas fa-file-prescription"></i></div>
+            <h3>Upload Prescription</h3>
+            <p>Submit your valid prescription for verification</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">04</div>
+            <div class="step-icon"><i class="fas fa-box"></i></div>
+            <h3>Fast Delivery</h3>
+            <p>Receive your order discreetly at your doorstep</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Customer Love</span>
+          <h2 class="section-title">What Our <span class="accent-text">Customers Say</span></h2>
+        </div>
+        <div class="testimonials-slider swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
+                <div class="testimonial-stars">★★★★★</div>
+                <p>"Amazing service! My order arrived in 3 days and the quality is excellent. The discreet packaging was a nice touch. Will definitely order again."</p>
+                <div class="testimonial-author">
+                  <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Johnson" loading="lazy" />
+                  <div>
+                    <h4>Michael Johnson</h4>
+                    <span>Verified Buyer</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
+                <div class="testimonial-stars">★★★★★</div>
+                <p>"Very professional and discreet packaging. The customer support team was extremely helpful with my prescription transfer. Highly recommended!"</p>
+                <div class="testimonial-author">
+                  <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Williams" loading="lazy" />
+                  <div>
+                    <h4>Sarah Williams</h4>
+                    <span>Verified Buyer</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
+                <div class="testimonial-stars">★★★★★</div>
+                <p>"Best online pharmacy experience. Fast shipping, great prices, and authentic products. Their WhatsApp support is incredibly responsive."</p>
+                <div class="testimonial-author">
+                  <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="David Chen" loading="lazy" />
+                  <div>
+                    <h4>David Chen</h4>
+                    <span>Verified Buyer</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Questions?</span>
+          <h2 class="section-title">Frequently Asked <span class="accent-text">Questions</span></h2>
+        </div>
+        <div class="faq-grid">
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Do I need a prescription?</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>Yes, all prescription medications require a valid prescription from a licensed physician. We can help you transfer your existing prescription or connect you with a telemedicine service for a consultation.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>How long does shipping take?</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>Priority Mail takes 3-5 business days ($45), and Overnight shipping takes 1-2 business days ($189). Both include same-day tracking and discreet packaging.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Is my payment secure?</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>Absolutely! We use PayPal's secure payment processing with advanced encryption. Your financial information is never stored on our servers.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>What if I have issues with my order?</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>Contact our 24/7 support team via phone, email, or WhatsApp. We'll resolve any issues within 24 hours. Customer satisfaction is our top priority.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>How do I know the medications are authentic?</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>All our medications are sourced directly from FDA-approved manufacturers and licensed wholesalers. We provide certificates of authenticity upon request.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Can I return my medication?</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>Due to safety regulations, we cannot accept returns on prescription medications. However, if there's an issue with your order, please contact us immediately for resolution.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-card">
+          <div class="cta-content">
+            <h2>Ready to Order Your Medications?</h2>
+            <p>Join thousands of satisfied customers who trust MediCare Plus for their healthcare needs. Fast, discreet, and reliable service.</p>
+            <div class="cta-buttons">
+              <a href="medicines.html" class="btn btn-primary btn-lg">
+                <i class="fas fa-pills"></i> Browse Medications
+              </a>
+              <a href="contact.html" class="btn btn-outline btn-lg">
+                <i class="fas fa-phone"></i> Contact Us
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">
+              <i class="fas fa-pills"></i>
+            </div>
+            <span>MediCare<span>+</span></span>
+          </a>
+          <p>Licensed online pharmacy facilitator. Discreet, fast, and reliable medication delivery across USA. Your health and privacy are our top priorities.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+            <li><a href="medicines.html"><i class="fas fa-chevron-right"></i> Medications</a></li>
+            <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+            <li><a href="blog.html"><i class="fas fa-chevron-right"></i> Health Blog</a></li>
+            <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Privacy Policy</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Terms of Service</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> HIPAA Compliance</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Refund Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <ul>
+            <li>
+              <i class="fas fa-phone-alt"></i>
+              <div>
+                <strong>Customer Care</strong>
+                <span>+12059009168</span>
+              </div>
+            </li>
+            <li>
+              <i class="fab fa-whatsapp"></i>
+              <div>
+                <strong>WhatsApp</strong>
+                <span>+12059730013</span>
+              </div>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <div>
+                <strong>Email</strong>
+                <span>robbieburt165@gmail.com</span>
+              </div>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <div>
+                <strong>Email</strong>
+                <span>daniellemontuori67@gmail.com</span>
+              </div>
+            </li>
+            <li>
+              <i class="fas fa-clock"></i>
+              <div>
+                <strong>Support</strong>
+                <span>24/7 Available</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 MediCare Plus — All rights reserved. Prescription required for RX medications.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Chat Widget -->
+  <div class="chat-widget">
+    <button class="chat-toggle" id="chatToggle">
+      <i class="fas fa-comments"></i>
+    </button>
+    <div class="chat-box" id="chatBox">
+      <div class="chat-header">
+        <h3><i class="fas fa-headset"></i> Customer Support</h3>
+        <button class="chat-close" id="chatClose"><i class="fas fa-times"></i></button>
+      </div>
+      <div class="chat-body">
+        <div class="chat-message bot">
+          <p>Hello! How can we help you today? We're available 24/7.</p>
+        </div>
+      </div>
+      <div class="chat-footer">
+        <div class="chat-options">
+          <a href="https://wa.me/+12059730013" target="_blank" class="chat-option-btn whatsapp">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+          </a>
+          <a href="tel:+12059009168" class="chat-option-btn call">
+            <i class="fas fa-phone-alt"></i> Call Us
+          </a>
+          <a href="mailto:robbieburt165@gmail.com" class="chat-option-btn email">
+            <i class="fas fa-envelope"></i> Email
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cart Sidebar -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h3><i class="fas fa-shopping-bag"></i> Your Cart</h3>
+      <button class="close-cart" id="closeCartBtn" aria-label="Close cart">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <div class="cart-items" id="cartItemsList"></div>
+    <div class="cart-shipping-select">
+      <h4>Shipping Method</h4>
+      <div class="shipping-options">
+        <label class="ship-card active" data-ship-cost="45">
+          <input type="radio" name="shipping" checked />
+          <div class="ship-card-content">
+            <strong>Priority Mail</strong>
+            <span>$45.00</span>
+            <small>3-5 Business Days</small>
+          </div>
+        </label>
+        <label class="ship-card" data-ship-cost="189">
+          <input type="radio" name="shipping" />
+          <div class="ship-card-content">
+            <strong>Overnight</strong>
+            <span>$189.00</span>
+            <small>1-2 Business Days</small>
+          </div>
+        </label>
+      </div>
+    </div>
+    <div class="cart-summary">
+      <div class="cart-summary-row">
+        <span>Subtotal</span>
+        <span>$<span id="cartSubtotal">0.00</span></span>
+      </div>
+      <div class="cart-summary-row">
+        <span>Shipping</span>
+        <span>$<span id="cartShippingCost">45.00</span></span>
+      </div>
+      <div class="cart-summary-row cart-total-line">
+        <strong>Total</strong>
+        <strong>$<span id="cartTotalAmount">0.00</span></strong>
+      </div>
+    </div>
+    <button class="btn btn-primary checkout-btn" id="checkoutFinalBtn">
+      <i class="fab fa-paypal"></i> Proceed to PayPal
+    </button>
+    <p class="cart-note">
+      <i class="fas fa-lock"></i> Secure payment via PayPal. Your order details will be saved to our system.
+    </p>
+  </div>
+
+  <!-- Toast Container -->
+  <div id="toastMsgContainer"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

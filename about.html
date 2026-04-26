@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MediCare Plus | About Us</title>
+  <meta name="description" content="Learn about MediCare Plus - your trusted online pharmacy since 2015." />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <style>
+    .about-hero {
+      background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+      color: white;
+      padding: 80px 0;
+      text-align: center;
+    }
+    .about-hero h1 { font-size: 3rem; margin-bottom: 20px; color: white; }
+    .about-hero p { font-size: 1.2rem; opacity: 0.95; max-width: 700px; margin: 0 auto; }
+    .about-content { padding: 80px 0; }
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+    .about-text h2 { font-size: 2.5rem; margin-bottom: 20px; }
+    .about-text p { margin-bottom: 20px; color: var(--text-secondary); line-height: 1.8; }
+    .about-image img { width: 100%; border-radius: var(--radius-lg); box-shadow: var(--shadow-lg); }
+    .mission-section { padding: 80px 0; background: var(--surface); }
+    .mission-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+    .mission-card { text-align: center; padding: 40px 30px; background: var(--bg-body); border-radius: var(--radius-md); }
+    .mission-card i { font-size: 3rem; color: var(--accent); margin-bottom: 20px; }
+    .mission-card h3 { margin-bottom: 15px; }
+    @media (max-width: 768px) {
+      .about-grid, .mission-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-flex">
+        <div class="contact-strip">
+          <span><i class="fas fa-phone-alt"></i> +12059009168</span>
+          <span><i class="fab fa-whatsapp"></i> +12059730013</span>
+          <span><i class="fas fa-clock"></i> 24/7 Support</span>
+        </div>
+        <div class="theme-switch-wrapper">
+          <label class="theme-switch" for="darkModeToggle">
+            <input type="checkbox" id="darkModeToggle" />
+            <span class="slider round"><i class="fas fa-sun"></i><i class="fas fa-moon"></i></span>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="logo">
+          <div class="logo-icon"><i class="fas fa-pills"></i></div>
+          <span>MediCare<span class="plus">+</span></span>
+        </a>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="medicines.html" class="nav-link">Medications</a></li>
+          <li><a href="about.html" class="nav-link active">About Us</a></li>
+          <li><a href="blog.html" class="nav-link">Health Blog</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="cart-btn" id="cartIconBtn" aria-label="Open cart">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-text">Cart</span>
+            <span id="cartCountBadge" class="cart-badge">0</span>
+          </button>
+          <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="about-hero">
+      <div class="container">
+        <h1>About MediCare Plus</h1>
+        <p>Your trusted partner in healthcare since 2015. We're committed to providing safe, affordable, and accessible medications to patients across the United States.</p>
+      </div>
+    </section>
+
+    <section class="about-content">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-text">
+            <h2>Our <span class="accent-text">Story</span></h2>
+            <p>Founded in 2015, MediCare Plus was established with a simple mission: to make quality healthcare accessible to everyone. We understand the challenges patients face in obtaining their medications, from long pharmacy lines to high costs.</p>
+            <p>Our team of licensed pharmacists and healthcare professionals works tirelessly to ensure that every patient receives authentic, FDA-approved medications with the convenience of online ordering and home delivery.</p>
+            <p>Today, we serve over 25,000 satisfied customers across all 50 states, maintaining a 4.9/5 rating. Our commitment to quality, safety, and customer service remains unwavering.</p>
+          </div>
+          <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1652787545245-5e39748cdf97?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c3RvcnklMjBtZWRpY2FsfGVufDB8fDB8fHww?w=600&h=400&fit=crop" alt="Modern pharmacy" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mission-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Our Values</span>
+          <h2 class="section-title">What <span class="accent-text">Drives Us</span></h2>
+        </div>
+        <div class="mission-grid">
+          <div class="mission-card">
+            <i class="fas fa-shield-alt"></i>
+            <h3>Safety First</h3>
+            <p>All medications are sourced from FDA-approved facilities with strict quality control.</p>
+          </div>
+          <div class="mission-card">
+            <i class="fas fa-hand-holding-heart"></i>
+            <h3>Patient Care</h3>
+            <p>We put our patients at the center of everything we do, offering personalized support.</p>
+          </div>
+          <div class="mission-card">
+            <i class="fas fa-lock"></i>
+            <h3>Privacy Guaranteed</h3>
+            <p>Your personal and medical information is protected with HIPAA-compliant systems.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2026 MediCare Plus — All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="chat-widget">
+    <button class="chat-toggle" id="chatToggle"><i class="fas fa-comments"></i></button>
+    <div class="chat-box" id="chatBox">
+      <div class="chat-header">
+        <h3><i class="fas fa-headset"></i> Customer Support</h3>
+        <button class="chat-close" id="chatClose"><i class="fas fa-times"></i></button>
+      </div>
+      <div class="chat-body">
+        <div class="chat-message bot"><p>Hello! How can we help you today?</p></div>
+      </div>
+      <div class="chat-footer">
+        <div class="chat-options">
+          <a href="https://wa.me/+12059730013" target="_blank" class="chat-option-btn whatsapp">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+          </a>
+          <a href="tel:+12059009168" class="chat-option-btn call">
+            <i class="fas fa-phone-alt"></i> Call Us
+          </a>
+          <a href="mailto:robbieburt165@gmail.com" class="chat-option-btn email">
+            <i class="fas fa-envelope"></i> Email
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="js/pages.js"></script>
+</body>
+</html>

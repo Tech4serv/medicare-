@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MediCare Plus | Contact Us</title>
+  <meta name="description" content="Contact MediCare Plus for 24/7 support. Reach us via phone, WhatsApp, email, or visit our pharmacy." />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <style>
+    .contact-hero {
+      background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+      color: white;
+      padding: 80px 0;
+      text-align: center;
+    }
+    .contact-hero h1 { font-size: 3rem; margin-bottom: 20px; color: white; }
+    .contact-section { padding: 80px 0; }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; }
+    .contact-info h2 { font-size: 2.5rem; margin-bottom: 20px; }
+    .contact-info p { color: var(--text-secondary); margin-bottom: 40px; line-height: 1.8; }
+    .contact-details { display: flex; flex-direction: column; gap: 20px; }
+    .contact-detail-item { display: flex; align-items: flex-start; gap: 16px; padding: 20px; background: var(--bg-body); border-radius: var(--radius-sm); }
+    .contact-detail-item i { font-size: 1.5rem; color: var(--accent); width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; background: var(--surface); border-radius: 50%; }
+    .contact-detail-item h4 { margin-bottom: 4px; }
+    .contact-form { background: var(--surface); padding: 48px; border-radius: var(--radius-lg); box-shadow: var(--shadow-lg); }
+    .contact-form h3 { font-size: 1.5rem; margin-bottom: 30px; }
+    .form-group { margin-bottom: 20px; }
+    .form-group label { display: block; margin-bottom: 8px; font-weight: 600; }
+    .form-group input, .form-group textarea { width: 100%; padding: 14px 18px; border: 1px solid var(--border-light); border-radius: var(--radius-sm); background: var(--bg-body); color: var(--text-primary); font-family: inherit; transition: var(--transition); }
+    .form-group input:focus, .form-group textarea:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px rgba(43,156,124,0.1); }
+    .form-group textarea { height: 150px; resize: vertical; }
+    @media (max-width: 768px) {
+      .contact-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-flex">
+        <div class="contact-strip">
+          <span><i class="fas fa-phone-alt"></i> +12059009168</span>
+          <span><i class="fab fa-whatsapp"></i> +12059730013</span>
+          <span><i class="fas fa-clock"></i> 24/7 Support</span>
+        </div>
+        <div class="theme-switch-wrapper">
+          <label class="theme-switch" for="darkModeToggle">
+            <input type="checkbox" id="darkModeToggle" />
+            <span class="slider round"><i class="fas fa-sun"></i><i class="fas fa-moon"></i></span>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="logo">
+          <div class="logo-icon"><i class="fas fa-pills"></i></div>
+          <span>MediCare<span class="plus">+</span></span>
+        </a>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="medicines.html" class="nav-link">Medications</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="blog.html" class="nav-link">Health Blog</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="cart-btn" id="cartIconBtn" aria-label="Open cart">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-text">Cart</span>
+            <span id="cartCountBadge" class="cart-badge">0</span>
+          </button>
+          <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="contact-hero">
+      <div class="container">
+        <h1>Get in Touch</h1>
+        <p>We're here to help 24/7. Reach out to us via phone, WhatsApp, email, or send us a message.</p>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h2>Contact <span class="accent-text">Information</span></h2>
+            <p>Our team is available around the clock to assist you with any questions about our medications, ordering process, or general inquiries.</p>
+            <div class="contact-details">
+              <div class="contact-detail-item">
+                <i class="fas fa-phone-alt"></i>
+                <div>
+                  <h4>Customer Care</h4>
+                  <span>+12059009168</span>
+                </div>
+              </div>
+              <div class="contact-detail-item">
+                <i class="fab fa-whatsapp"></i>
+                <div>
+                  <h4>WhatsApp</h4>
+                  <span>+12059730013</span>
+                </div>
+              </div>
+              <div class="contact-detail-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <h4>Email</h4>
+                  <span>daniellemontuori67@gmail.com</span>
+                </div>
+              </div>
+              <div class="contact-detail-item">
+                <i class="fas fa-clock"></i>
+                <div>
+                  <h4>Support Hours</h4>
+                  <span>24/7 Available</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form">
+            <h3>Send Us a Message</h3>
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your full name" />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email" />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" />
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required placeholder="What is this about?" />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required placeholder="How can we help you?"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+                <i class="fas fa-paper-plane"></i> Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2026 MediCare Plus — All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="chat-widget">
+    <button class="chat-toggle" id="chatToggle"><i class="fas fa-comments"></i></button>
+    <div class="chat-box" id="chatBox">
+      <div class="chat-header">
+        <h3><i class="fas fa-headset"></i> Customer Support</h3>
+        <button class="chat-close" id="chatClose"><i class="fas fa-times"></i></button>
+      </div>
+      <div class="chat-body">
+        <div class="chat-message bot"><p>Hello! How can we help you today?</p></div>
+      </div>
+      <div class="chat-footer">
+        <div class="chat-options">
+          <a href="https://wa.me/+12059730013" target="_blank" class="chat-option-btn whatsapp">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+          </a>
+          <a href="tel:+12059009168" class="chat-option-btn call">
+            <i class="fas fa-phone-alt"></i> Call Us
+          </a>
+          <a href="mailto:robbieburt165@gmail.com" class="chat-option-btn email">
+            <i class="fas fa-envelope"></i> Email
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="js/pages.js"></script>
+</body>
+</html>
